@@ -31,6 +31,7 @@ dotnet add package FluentMigrator.Runner
 dotnet add package FluentMigrator.Runner.SqlServer  # 如果使用SQL Server
 ```
 
+
 ## 基本使用示例
 
 ### 1. 创建第一个迁移
