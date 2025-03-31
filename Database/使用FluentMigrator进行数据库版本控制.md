@@ -37,7 +37,7 @@ dotnet add package FluentMigrator.Runner.SqlServer  # 如果使用SQL Server
 ### 1. 创建第一个迁移
 
 ```csharp
-[Migration(202301010001)]
+[Migration(202401010001)]
 public class CreateUserTable : Migration
 {
     public override void Up()
@@ -56,10 +56,11 @@ public class CreateUserTable : Migration
 }
 ```
 
+
 ### 2. 添加索引和外键
 
 ```csharp
-[Migration(202301010002)]
+[Migration(202401010002)]
 public class AddUserRelationships : Migration
 {
     public override void Up()
@@ -93,7 +94,7 @@ public class AddUserRelationships : Migration
 ### 3. 数据迁移
 
 ```csharp
-[Migration(202301010003)]
+[Migration(202401010003)]
 public class SeedInitialData : Migration
 {
     public override void Up()
@@ -179,7 +180,7 @@ Create.Table("Products").WithAuditColumns()...
 ### 3. 事务控制
 
 ```csharp
-[Migration(202301010004, TransactionBehavior.None)]
+[Migration(202401010004, TransactionBehavior.None)]
 public class NonTransactionalMigration : Migration
 {
     public override void Up()
